@@ -10,5 +10,15 @@
 
 import math
 
+def solve(x,c,h):
+    val = int(x)
+    return round(math.sqrt((2*c*val)/h))
 
-
+C = 50
+H = 30
+values = input()
+array = values.split(',')
+ans = []
+for item in array:
+    ans.append(solve(item, C, H))
+print(ans)
